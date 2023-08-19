@@ -20,11 +20,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   int currentIndex =0;
   List page =[
     HomeScreen(),
-    FavoriteScreen(product: widget.product, index: widget.index)
+   // FavoriteScreen(product: widget.product, index: widget.index)
   ];
   @override
   Widget build(BuildContext context) {
     Size size =MediaQuery.of(context).size;
+    //---
     return Scaffold(
       body:
          page[currentIndex],
